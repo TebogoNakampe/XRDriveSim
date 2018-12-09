@@ -22,22 +22,6 @@ The software provided here works with the currently available Intel® RealSense�
 * [RealSense_resnet_ssd_face_python](resnet_ssd_face_python.py) - This application demonstrates resnet_ssd_face_python.py using OpenVINO Toolkit and RealSense-based implementation of [opencv-dnn](https://github.com/opencv/opencv/tree/master/samples/dnn)
 
 
-
-
-# Experimental Setup 
-
-1. Research previous and current work on Hand Gestures
-
-2. Defining hand gestures to control keys on a keyboard and mouse.
-
-3. Data Collection
-
-4. Training deep learning model which can recognize hand gestures at real time.
-
-5. Develop the XRDrive Game Scene
-
-
-
 # XRDrive Sim Hardware and Software
 
 XRDrive is an inference-based application supercharged with power-efficient Intel® processors and Intel® Processor Graphics on a laptop.
@@ -53,6 +37,29 @@ XRDrive is an inference-based application supercharged with power-efficient Inte
 9. MxNet
 10. Pyrealsense2
 11. Pymouse
+
+## Environment Setup
+* Install ROS2 [Bouncy](https://github.com/ros2/ros2/wiki) ([guide](https://github.com/ros2/ros2/wiki/Linux-Development-Setup))<br>
+* Install [OpenVINO™ Toolkit](https://software.intel.com/en-us/openvino-toolkit) ([guide](https://software.intel.com/en-us/articles/OpenVINO-Install-Linux))<br>
+    	**Note**: Please use  *root privileges* to run the installer when installing the core components.
+* Install OpenCL Driver for GPU
+	```bash
+	cd /opt/intel/computer_vision_sdk/install_dependencies
+	sudo ./install_NEO_OCL_driver.sh
+	```
+* Install Intel® RealSense™ SDK 2.0 [(tag v2.14.1)](https://github.com/IntelRealSense/librealsense/tree/v2.14.1)<br>
+	* [Install from source code](https://github.com/IntelRealSense/librealsense/blob/v2.14.1/doc/installation.md)(Recommended)<br>
+	* [Install from package](https://github.com/IntelRealSense/librealsense/blob/v2.14.1/doc/distribution_linux.md)<br>
+
+- Other Dependencies
+	```bash
+	# numpy
+	pip3 install numpy
+	# libboost
+	sudo apt-get install -y --no-install-recommends libboost-all-dev
+	cd /usr/lib/x86_64-linux-gnu
+	sudo ln -s libboost_python-py35.so libboost_python3.so
+	```
 
 
 # 1. Research previous and current work on Hand Gestures
