@@ -11,5 +11,9 @@ This project provides Python code to demonstrate Hand Gestures via on PC camera 
 
 The software provided here works with the currently available Intel® RealSense™ D400 depth cameras supported by librealsense2. XRDrive is experimental code and not an official Intel® product.
 
-## XRDrive Sim Notebooks
+## XRDrive Sim Notebooks and Python Samples
+
+* [XRDrive_RealSense](.xr_drive_realsense) - This application demonstrates basic dynamics-based hand tracking using synthetic data produced from a 3D model rendered to an OpenGL context (and corresponding depth buffer). This application is a good entrypoint into the codebase as it does not require any specific camera hardware. 
+
+* [XRDrive_Cam](.xr_drive_realsense) - This sample introduces the dynamics-based tracker in the context of real-time input from an Intel® RealSense™ depth camera. It requires a RealSense™ SR300 device. Moreover, the sample illustrates the impact of real-world sensor noise and the need for effective segmentation. 
 
