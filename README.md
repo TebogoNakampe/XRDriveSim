@@ -13,9 +13,11 @@ The software provided here works with the currently available IntelÂ® RealSenseâ
 
 ## XRDrive Sim Notebooks and Python Samples
 
-* [XRDrive_RealSense](xr_drive_realsense) - This application demonstrates RealSense-based hand gesture to control keyboard and mouse while playing a racing game using DeepHandNet model
+* [XRDrive_RealSense](xr_drive_realsense.ipynb) - This application demonstrates RealSense-based hand gesture to control keyboard and mouse while playing a racing game using DeepHandNet model
 
-* [XRDrive_Cam](xr_drive_cam) - This application demonstrates RealSense-based hand gesture to control keyboard and mouse while playing a racing game using DeepHandNet model
+* [XRDrive_Cam](xr_drive_cam.ipynb) - This application demonstrates RealSense-based hand gesture to control keyboard and mouse while playing a racing game using DeepHandNet model
+
+* [RealSense_Openpose](openpose.py) - This application demonstrates openpose.py using OpenVINO Toolkit and RealSense-based implementation of [opencv-dnn](https://github.com/opencv/opencv/blob/master/samples/dnn/openpose.py) re-implementaion from [Carnegie Mellon University OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose)
 
 
 
