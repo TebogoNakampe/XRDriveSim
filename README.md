@@ -61,13 +61,7 @@ XRDrive is an inference-based application supercharged with power-efficient Inte
 	sudo ln -s libboost_python-py35.so libboost_python3.so
 	```
 
-NOTE on Usage of OpenVINO as Backend for OpenCV: Enable Intel's Inference Engine backend right after cv::dnn::readNet invocation:
-
-net.setPreferableBackend(DNN_BACKEND_INFERENCE_ENGINE);
-       ```net.setPreferableBackend(DNN_BACKEND_INFERENCE_ENGINE);
-       // the other possible options are
-       // DNN_BACKEND_OPENCV (the default C++ implementation)
-       // DNN_BACKEND_HALIDE (Halide-based implementation)
+Note that the inference engine backend is used by default since OpenCV 3.4.2 (OpenVINO 2018.R2) when OpenCV is built with the Inference engine support, so the call above is not necessary. Also, the Inference engine backend is the only available option (also enabled by default) when the loaded model is represented in OpenVINO™ Model Optimizer format.
        ```
 
 
