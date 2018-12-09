@@ -106,7 +106,16 @@ Model is trained by 64x64 pixel images using Intel Architecture
 Data Preprocessing was done using OpenCV and Numpy to generate masked hand images. run xr_preprocessing_data.ipynb 
 To recreate the Model run xrdrive_train_model.ipynb, It will read the preprocessed hand dataset, mask dataset and train the model, 400 epochs iterated.
 
-## 5. Running the Demo
+# 5. Convert an MXNet* Model
+To convert an MXNet model:
+Go to the <INSTALL_DIR>/deployment_tools/model_optimizer directory.
+To convert an MXNet* model contained in a model-file-symbol.json and model-file-0000.params, run the Model Optimizer launch script mo.py, specifying a path to the input model file:
+		```Bash
+		python3 mo_mxnet.py --input_model chkpt-0390.params
+		```
+
+
+## 6. Running the Demo
 * Preparation
 	* set OpenVINO toolkit ENV
 		```bash
