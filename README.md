@@ -19,6 +19,8 @@ The software provided here works with the currently available IntelÂ® RealSenseâ
 
 * [RealSense_Openpose](openpose.py) - This application demonstrates openpose.py using OpenVINO Toolkit and RealSense-based implementation of [opencv-dnn](https://github.com/opencv/opencv/blob/master/samples/dnn/openpose.py) re-implementaion from [Carnegie Mellon University OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose)
 
+* [RealSense_resnet_ssd_face_python](resnet_ssd_face_python.py) - This application demonstrates resnet_ssd_face_python.py using OpenVINO Toolkit and RealSense-based implementation of [opencv-dnn](https://github.com/opencv/opencv/tree/master/samples/dnn) re-implementaion from [Carnegie Mellon University OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose)
+
 
 
 
