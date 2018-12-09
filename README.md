@@ -7,7 +7,7 @@ Anaconda | [![Build status](https://ci.appveyor.com/api/projects/status/swutsp1b
 
 The code in this repository is authored for computer-vision and machine-learning students and researchers interested in developing hand gesture applications using Intel® RealSense™ D400 depth cameras. The CNN implementation provided is intended to be used as a reference for training nets based on annotated ground-truth data; researchers may instead prefer to import captured datasets into other frameworks such as Google's TensorFlow and Caffe and optimize these algorithims using Model Optimizer from OpenVINO Toolkit.
 
-This project provides Python code to demonstrate Hand Gestures via on PC camera or depth data, namely Intel® RealSense™ depth cameras. Additionally, this project showcases the utility of convolutional neural networks as a key component of real-time hand tracking pipelines using Intel OpenVINO. Two demo Jupyter Notebooks are provided showing hand gesture control from a webcam and depth camera.Vimeo demo-videos demonstrating some functionality of the XRDrive code can be found here: [XRDriveSim1-demo](https://vimeo.com/305377886) and [XRDriveSim2-demo](https://vimeo.com/305378325)
+This project provides Python code to demonstrate Hand Gestures via on PC camera or depth data, namely Intel® RealSense™ depth cameras. Additionally, this project showcases the utility of convolutional neural networks as a key component of real-time hand tracking pipelines using Intel OpenVINO. Two demo Jupyter Notebooks are provided showing hand gesture control from a webcam and depth camera. A YouTube video demonstrating some functionality the XRDrive code can be found: 
 
 The software provided here works with the currently available Intel® RealSense™ D400 depth cameras supported by librealsense2. XRDrive is experimental code and not an official Intel® product.
 
@@ -61,6 +61,15 @@ XRDrive is an inference-based application supercharged with power-efficient Inte
 	sudo ln -s libboost_python-py35.so libboost_python3.so
 	```
 
+NOTE on Usage of OpenVINO as Backend for OpenCV: Enable Intel's Inference Engine backend right after cv::dnn::readNet invocation:
+
+net.setPreferableBackend(DNN_BACKEND_INFERENCE_ENGINE);
+       ```net.setPreferableBackend(DNN_BACKEND_INFERENCE_ENGINE);
+       // the other possible options are
+       // DNN_BACKEND_OPENCV (the default C++ implementation)
+       // DNN_BACKEND_HALIDE (Halide-based implementation)
+       ```
+
 
 # 1. Research previous and current work on Hand Gestures
 
@@ -97,15 +106,34 @@ We divided the left hand side into three regions (left, middle and right region)
 To train the DeepHandNet, big data is required and the data are to be collected by ourselves. We collected data from a variety of source including our own captured images, 2000 hand images were collected.
 
 
-
-
- 
 # 4. Training deep learning model which can recognize hand gestures at real time.
 	## Training the MxNet DeepHandNet
 Model is trained by 64x64 pixel images using Intel Architecture  
 Data Preprocessing was done using OpenCV and Numpy to generate masked hand images. run xr_preprocessing_data.ipynb 
 To recreate the Model run xrdrive_train_model.ipynb, It will read the preprocessed hand dataset, mask dataset and train the model, 400 epochs iterated.
 
+## 5. Running the Demo
+* Preparation
+	* set OpenVINO toolkit ENV
+		```bash
+		source /opt/intel/computer_vision_sdk/bin/setupvars.sh
+		```
+	* set ENV LD_LIBRARY_PATH
+		```bash
+		export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/intel/computer_vision_sdk/deployment_tools/inference_engine/samples/build/intel64/Release/lib
+		```
 
+* Launch Jupyter Notebook in root mode
+		```Anaconda
+		jupyter notebook --allow -root
+		```
+* Run xr_preprocessing_data.ipynb to preprocess data
+		```Download Preprocessing Data
+		Google Drive: 
+		```
+* Run xrdrive_train_model.ipynb to train DeepHandNet or Download Pretrained DeepHandNet
+		```Download DeepHandNet
+		Google Drive: 
+		```
 
 
