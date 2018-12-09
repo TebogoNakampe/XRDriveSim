@@ -42,29 +42,29 @@ The software provided here works with the currently available Intel® RealSense�
 
 XRDrive is an inference-based application supercharged with power-efficient Intel® processors and Intel® Processor Graphics on a laptop.
 
-ZenBook UX430
-Intel Core i7 8th Gen
-16 GB DDR4 RAM
-512 SSD Storage
-Intel RealSense D435
-Ubuntu 18.04 LTS
-ROS2OpenVINO
-Anacodonda: Jupyter Notebook 
-MxNet
-Pyrealsense2
-Pymouse
+1. ZenBook UX430
+2. nIntel Core i7 8th Gen
+3. 16 GB DDR4 RAM
+4. 512 SSD Storage
+5. Intel RealSense D435
+6. Ubuntu 18.04 LTS
+7. ROS2OpenVINO
+8. Anacodonda: Jupyter Notebook 
+9. MxNet
+10. Pyrealsense2
+11. Pymouse
 
 
 # 1. Research previous and current work on Hand Gestures
 
-Xinghao Chen: awesome-hand-pose-estimation
-3DiVi: Nuitrack 3D Gestures
-Eyesight Embedded Computer Vision
-Carnegie Mellon University OpenPose: webcam
-Microsoft hololens: 3D sensor
-Microsoft hand tracking: 3D sensor
-Leap Motion: 3D sensor
-Mano Motion: smartphone camera
+Xinghao Chen: awesome-hand-pose-estimation,
+3DiVi: Nuitrack 3D Gestures,
+Eyesight Embedded Computer Vision,
+Carnegie Mellon University OpenPose: webcam,
+Microsoft hololens: 3D sensor,
+Microsoft hand tracking: 3D sensor,
+Leap Motion: 3D sensor,
+Mano Motion: smartphone camera,
 PilotBit Mobile Hand Tracking: 3D sensor
 
 # 2. Defining hand gestures to control keys on a keyboard and mouse.
