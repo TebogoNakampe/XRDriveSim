@@ -19,3 +19,82 @@ The software provided here works with the currently available Intel® RealSense�
 
 
 
+
+# Experimental Setup 
+
+1. Research previous and current work on Hand Gestures
+
+2. Defining hand gestures to control keys on a keyboard and mouse.
+
+3. Data Collection
+
+4. Training deep learning model which can recognize hand gestures at real time.
+
+5. Develop the XRDrive Game Scene
+
+
+
+# XRDrive Sim Hardware and Software
+
+XRDrive is an inference-based application supercharged with power-efficient Intel® processors and Intel® Processor Graphics on a laptop.
+
+ZenBook UX430
+Intel Core i7 8th Gen
+16 GB DDR4 RAM
+512 SSD Storage
+Intel RealSense D435
+Ubuntu 18.04 LTS
+ROS2OpenVINO
+Anacodonda: Jupyter Notebook 
+MxNet
+Pyrealsense2
+Pymouse
+
+
+# 1. Research previous and current work on Hand Gestures
+
+Xinghao Chen: awesome-hand-pose-estimation
+3DiVi: Nuitrack 3D Gestures
+Eyesight Embedded Computer Vision
+Carnegie Mellon University OpenPose: webcam
+Microsoft hololens: 3D sensor
+Microsoft hand tracking: 3D sensor
+Leap Motion: 3D sensor
+Mano Motion: smartphone camera
+PilotBit Mobile Hand Tracking: 3D sensor
+
+# 2. Defining hand gestures to control keys on a keyboard and mouse.
+
+Hand Gesture control keys for the keyboard are assigned to the left hand. Hand Gesture control keys for the mouse are assigned to the right hand. 
+The normal has 10 key features:
+
+1. closed hand
+2. open hand
+3. thumb only
+4. additional index finger
+5. additional middle finger
+6. folding first finger
+7. folding second finger
+8. folding middle finger
+9. folding index finger
+10. folding thumb
+
+We divided the left hand side into three regions (left, middle and right region). We use 3, 4, 5 as control, as a result we have 9 controls and 135 gestures that cover the keyboard. For a right hand as a mouse, all 10 features as gestures , which cover the inputs from mouse. The center of finger is a mouse cursor. The mouse cursor of computer will track the center of the right hand.
+
+# 3. Data Collection
+
+To train the DeepHandNet, big data is required and the data are to be collected by ourselves. We collected data from a variety of source including our own captured images, 2000 hand images were collected.
+
+
+
+
+ 
+# 4. Training deep learning model which can recognize hand gestures at real time.
+	## Training the MxNet DeepHandNet
+Model is trained by 64x64 pixel images using Intel Architecture  
+Data Preprocessing was done using OpenCV and Numpy to generate masked hand images. run xr_preprocessing_data.ipynb 
+To recreate the Model run xrdrive_train_model.ipynb, It will read the preprocessed hand dataset, mask dataset and train the model, 400 epochs iterated.
+
+
+
+
