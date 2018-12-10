@@ -138,11 +138,11 @@ To convert an MXNet* model contained in a model-file-symbol.json and model-file-
 		```
 * Run xr_preprocessing_data.ipynb to preprocess data
 		```Download Preprocessing Data
-		Google Drive: 
+		Google Drive: https://drive.google.com/folderview?id=1jP-oeAksLTnrXwOjhcd3eoyoHzce0rSf
 		```
 * Run xrdrive_train_model.ipynb to train DeepHandNet or Download Pretrained DeepHandNet
 		```Download DeepHandNet
-		Google Drive: 
+		Google Drive: https://drive.google.com/folderview?id=1Oq_m2UzWf3JBj12PA4yLrpFFNRFxSgX
 		```
 
 
