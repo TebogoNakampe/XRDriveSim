@@ -41,6 +41,10 @@ XRDrive is an inference-based application supercharged with power-efficient Inte
 9. MxNet
 10. Pyrealsense2
 11. Pymouse
+12. Numpy 1.13.1
+13. Pandas 0.20.3
+14. Opencv 3.4.0+
+15. Python2.7
 
 ## Environment Setup
 * Install ROS2 [Bouncy](https://github.com/ros2/ros2/wiki) ([guide](https://github.com/ros2/ros2/wiki/Linux-Development-Setup))<br>
@@ -141,6 +145,22 @@ To convert an MXNet* model contained in a model-file-symbol.json and model-file-
 	
 * Run xrdrive_train_model.ipynb to train DeepHandNet or Download Pretrained DeepHandNet
 		[Download DeepHandNet](https://drive.google.com/folderview?id=1Oq_m2UzWf3JBj12PA4yLrpFFNRFxSgX)
+		
+		
+#### How to run 
+
+* Run the xr_drive_cam.ipynb or (to use a webcam)
+
+* Run the xr_drive_realsense.ipynb (to use RealSense camera)
+
+#### How to use
+
+- Press g to enter GUI mode to capture a hand image
+- Press d to enter demo mode
+- Press d and Press c to enter calculator mode
+- Press m to add mouse mode
+- Press esc to quit program
+
 		
 
 
