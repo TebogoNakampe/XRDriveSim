@@ -77,13 +77,13 @@ Note that the inference engine backend is used by default since OpenCV 3.4.2 (Op
 
 * Xinghao Chen: awesome-hand-pose-estimation,
 * 3DiVi: Nuitrack 3D Gestures,
-Eyesight Embedded Computer Vision,
-Carnegie Mellon University OpenPose: webcam,
-Microsoft hololens: 3D sensor,
-Microsoft hand tracking: 3D sensor,
-Leap Motion: 3D sensor,
-Mano Motion: smartphone camera,
-PilotBit Mobile Hand Tracking: 3D sensor
+* Eyesight Embedded Computer Vision
+* Carnegie Mellon University OpenPose: webcam
+* Microsoft hololens: 3D sensor
+* Microsoft hand tracking: 3D sensor
+* Leap Motion: 3D sensor
+* Mano Motion: smartphone camera
+* PilotBit Mobile Hand Tracking: 3D sensor
 
 # 2. Defining hand gestures to control keys on a keyboard and mouse.
 
