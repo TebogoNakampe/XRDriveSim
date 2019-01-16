@@ -43,7 +43,7 @@ XRDrive is an inference-based application supercharged with power-efficient Inte
 11. Pymouse
 12. Numpy 1.13.1
 13. Pandas 0.20.3
-14. Opencv 3.4.0+
+14. Opencv 3.4.2+
 15. Python2.7
 
 ## Environment Setup
