@@ -75,8 +75,8 @@ Note that the inference engine backend is used by default since OpenCV 3.4.2 (Op
 
 # 1. Research previous and current work on Hand Gestures
 
-Xinghao Chen: awesome-hand-pose-estimation,
-3DiVi: Nuitrack 3D Gestures,
+* Xinghao Chen: awesome-hand-pose-estimation,
+* 3DiVi: Nuitrack 3D Gestures,
 Eyesight Embedded Computer Vision,
 Carnegie Mellon University OpenPose: webcam,
 Microsoft hololens: 3D sensor,
