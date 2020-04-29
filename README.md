@@ -55,7 +55,7 @@ XRDrive is an inference-based application supercharged with power-efficient Inte
 	cd /opt/intel/computer_vision_sdk/install_dependencies
 	sudo ./install_NEO_OCL_driver.sh
 	```
-* Install Intel® RealSense™ SDK 2.0 [(tag v2.14.1)](https://github.com/IntelRealSense/librealsense/tree/v2.14.1)<br>
+* Only if you have a realsense camera, else skip!!Install Intel® RealSense™ SDK 2.0 [(tag v2.14.1)](https://github.com/IntelRealSense/librealsense/tree/v2.14.1)<br>
 	* [Install from source code](https://github.com/IntelRealSense/librealsense/blob/v2.14.1/doc/installation.md)(Recommended)<br>
 	* [Install from package](https://github.com/IntelRealSense/librealsense/blob/v2.14.1/doc/distribution_linux.md)<br>
 
